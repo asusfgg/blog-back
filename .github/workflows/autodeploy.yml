@@ -48,7 +48,7 @@ jobs:
 
       - name: 部署到github pages
         run: |
-          git config --global core.autocrlf false
+          # git config --global core.autocrlf false
           git config --global user.name "asusfgg"
           git config --global user.email "asusfgg@hotmail.com"
           git clone https://github.com/asusfgg/asusfgg.github.io .deploy_git
