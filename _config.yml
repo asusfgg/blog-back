@@ -1,0 +1,190 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: '"此心不动 随机而动"'
+subtitle: 'Friendly, cheerful and helpful'
+description: 'Yingkou Institute of Technology-Applied Chemistry-Fine Chemical Industry-Undergraduate'
+keywords: 'Chemical design, paint development, mechanical design, front-end development, off-road mountain bikes, road bikes,'
+author: 啊柒
+language: en
+timezone: ''
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: http://example.com
+permalink: post/:abbrlink.html # post为自定义前缀
+abbrlink:
+  alg: crc32   #算法： crc16(default) and crc32
+  rep: hex     #进制： dec(default) and hex
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: false
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: butterfly
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: 'git'
+  repo:
+    github: 'https://github.com/asusfgg/asusfgg.github.io.git'
+    coding: 'https://KMSvQgFZzY:bc3bd216d512d93ca242a1273233b0707a7f6504@e.coding.net/fgbolg/fgblog/fgblog.git'
+  branch: 'master'
+
+jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: false
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+
+# douban
+douban:
+  user: 258500714
+  builtin: false
+  book:
+    title: '腹有诗书气自华'
+    quote: 'One who is filled with knowledge always behaves with elegance.'
+  movie:
+    title: '梦想与现实的碰撞'
+    quote: 'The collision between dream and reality.'
+  # game:
+  #   title: '诅咒中闪烁泪光，倾诉霜之哀伤。'
+  #   quote: 'Tears flicker in the curse and pour out the sorrow of frost.'
+  timeout: 10000
+
+live2d:
+  enable: true
+  scriptFrom: local # 默认
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  model:
+    use: live2d-widget-model-z16  #模型选择
+  display:
+    position: right  #模型位置
+    width: 150       #模型宽度
+    height: 300      #模型高度
+    hOffset: 20
+    vOffset: -20
+  mobile:
+    show: true     #是否在手机端显示
+
+# Ice Kano Plus_in
+# Hexo Github Canlendar
+# Author: Ice Kano
+# Modify: Lete乐特
+
+# butterfly
+githubcalendar:
+  enable: true
+  priority: 3
+  enable_page: /
+  user: asusfgg
+  layout:
+    type: id
+    name: recent-posts
+    index: 0
+  githubcalendar_html: '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>'
+  pc_minheight: 280px
+  mobile_minheight: 0px
+  # color: "['#f2fcf0', '#e3f5de', '#a8e19c', '#88d67c', '#65cb5a', '#36bf36', '#329c2f', '#2c7b28', '#255b21', '#1d3e19', '#142211']"
+  # color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
+  color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
+  # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
+  # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
+  api: https://python-github-calendar-api.vercel.app/api
+  # api: https://python-gitee-calendar-api.vercel.app/api
+  calendar_js: https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
+  plus_style: ""
