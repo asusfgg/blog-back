@@ -106,9 +106,10 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo:
+  repo: 
+    # git@120.53.239.15:/var/repo/hexo.git
     github: 'https://github.com/asusfgg/asusfgg.github.io.git'
-    coding: 'https://KMSvQgFZzY:bc3bd216d512d93ca242a1273233b0707a7f6504@e.coding.net/fgbolg/fgblog/fgblog.git'
+    # coding: 'https://KMSvQgFZzY:bc3bd216d512d93ca242a1273233b0707a7f6504@e.coding.net/fgbolg/fgblog/fgblog.git'
   branch: 'master'
 
 jsonContent:

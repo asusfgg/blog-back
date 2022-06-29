@@ -36,6 +36,7 @@
     "live2d-widget-model-hijiki": "^1.0.5",
     "live2d-widget-model-shizuku": "^1.0.5",
     "live2d-widget-model-wanko": "^1.0.5",
-    "live2d-widget-model-z16": "^1.0.5"
+    "live2d-widget-model-z16": "^1.0.5",
+    "save": "^2.5.0"
   }
 }
