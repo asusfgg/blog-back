@@ -12,6 +12,7 @@
     "version": "6.2.0"
   },
   "dependencies": {
+    "aplayer": "^1.10.1",
     "hexo": "^6.2.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-admin": "^2.3.0",
@@ -35,6 +36,7 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
+    "hexo-tag-aplayer": "^3.0.4",
     "hexo-theme-butterfly": "^4.3.1",
     "hexo-theme-landscape": "^0.0.3",
     "hexo-wordcount": "^6.0.1",
@@ -46,5 +48,19 @@
     "pug": "^3.0.2",
     "save": "^2.5.0",
     "valine": "^1.5.0"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asusfgg/blog-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asusfgg/blog-back/issues"
+  },
+  "homepage": "https://github.com/asusfgg/blog-back#readme",
+  "description": ""
 }

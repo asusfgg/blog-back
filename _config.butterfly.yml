@@ -4,9 +4,9 @@
 
 menu:
   主页: / || fas fa-home
-  档案: /archives/ || fas fa-archive
+  时间轴: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
-  类别: /categories/ || fas fa-folder-open
+  分类: /categories/ || fas fa-folder-open
   原创文学: /novel/ || fa-solid fa-book
     # 化学: /categories/ || fas fa-folder-open_in_new
   # 生活: / || fas fa-diamond
@@ -14,9 +14,20 @@ menu:
   生活||fa-solid fa-mug-hot:
     # 说说: /shuoshuo/ || fa fa-comments-o fa-commenting
   # 链接||fas fa-list:
+    # 音乐: /musics/ || fa-solid fa-music
     随笔: /essay/ || fa-solid fa-pen-nib
     友链: /link/ || fas fa-link
     关于: /about/ || fas fa-heart
+  Demo||fas fa-file-code:
+    # all html demo: /Demo/ || far fa-file-code
+    圈小猫: /HTML/圈小猫.html || fas fa-code
+    撕渔网: /HTML/撕渔网.html || fas fa-code
+    纸飞机: /HTML/纸飞机.html || fas fa-code
+    彩虹雨: /HTML/彩虹雨.html || fas fa-code
+    方块穿梭: /HTML/方块穿梭.html || fas fa-code
+    碰撞小球: /HTML/碰撞小球.html || fas fa-code
+    烟花效果: /HTML/烟花效果.html || fas fa-code
+    骇客帝国: /HTML/骇客帝国.html || fas fa-code
   # 娱乐||fas fa-list faa-float animated:
   #   书单: /books/ || fas fa-book faa-folder-animated
   #   电影: /movies/ || fas fa-video faa-folder-animated
@@ -100,7 +111,7 @@ disable_top_img: false
 # The banner image of home page
 # https://images.unsplash.com/photo-1488577198268-201003f53f79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 # index_img: "./img/99188599_p0.jpg"
-index_img: ./img/simon-barle-huangshan-06.jpg
+index_img: ./img/森林河流-简版.png
 # https://s3.bmp.ovh/imgs/2022/07/06/402d61d6b3075c08.jpg
 # https://images.unsplash.com/photo-1650660679585-feb9332d4dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
 
@@ -817,14 +828,14 @@ douban:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -891,6 +902,7 @@ inject:
     - <canvas id="universe"></canvas>
     - <script defer src="/js/universe.js"></script>
     - <script src="/js/daovoice.js"></script>
+    - <div class="aplayer no-destroy" data-id="7003766647" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
 
 # CDN
 # Don't modify the following settings unless you know how they work
