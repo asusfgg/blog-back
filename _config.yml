@@ -8,13 +8,14 @@ subtitle: 'Friendly, cheerful and helpful'
 description: 'Yingkou Institute of Technology-Applied Chemistry-Fine Chemical Industry-Undergraduate'
 keywords: 'Chemical design, paint development, mechanical design, front-end development, off-road mountain bikes, road bikes,'
 author: 啊柒
-language: en
+language: 'zh-CN'
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
-permalink: post/:abbrlink.html # post为自定义前缀
+permalink: posts/:abbrlink/ # post为自定义前缀
+# post/:abbrlink.html
 abbrlink:
   alg: crc32   #算法： crc16(default) and crc32
   rep: hex     #进制： dec(default) and hex
@@ -106,9 +107,10 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: 
+  repo:
+    repo: root@120.53.239.15:/home/git/blog.git
     # git@120.53.239.15:/var/repo/hexo.git
-    github: 'https://github.com/asusfgg/asusfgg.github.io.git'
+    # github: 'https://github.com/asusfgg/asusfgg.github.io.git'
     # coding: 'https://KMSvQgFZzY:bc3bd216d512d93ca242a1273233b0707a7f6504@e.coding.net/fgbolg/fgblog/fgblog.git'
   branch: 'master'
 
@@ -130,21 +132,24 @@ jsonContent:
       excerpt: false
       categories: false
       tags: true
-
+# Tidio online chat
+# tidio:
+#   enable: true
+#   key: t4qqr1cespreybg7wrjquvjcd4as3mug
 # douban
-douban:
-  user: 258500714
-  builtin: false
-  book:
-    title: '腹有诗书气自华'
-    quote: 'One who is filled with knowledge always behaves with elegance.'
-  movie:
-    title: '梦想与现实的碰撞'
-    quote: 'The collision between dream and reality.'
+# douban:
+#   user: 258500714
+#   builtin: false
+#   book:
+#     title: '腹有诗书气自华'
+#     quote: 'One who is filled with knowledge always behaves with elegance.'
+#   movie:
+#     title: '梦想与现实的碰撞'
+#     quote: 'The collision between dream and reality.'
   # game:
   #   title: '诅咒中闪烁泪光，倾诉霜之哀伤。'
   #   quote: 'Tears flicker in the curse and pour out the sorrow of frost.'
-  timeout: 10000
+  # timeout: 10000
 
 live2d:
   enable: true
@@ -160,7 +165,7 @@ live2d:
     hOffset: 20
     vOffset: -20
   mobile:
-    show: true     #是否在手机端显示
+    show: false     #是否在手机端显示
 
 # Ice Kano Plus_in
 # Hexo Github Canlendar

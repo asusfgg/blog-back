@@ -1,8 +1,7 @@
 ---
 title: 我的第一篇hexo文章
 tags: hexo入门
-cover: >-
-  https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80
+cover: https://s3.bmp.ovh/imgs/2022/07/06/bc134af2f706c860.webp
 abbrlink: 7d13b26d
 date: 2022-06-21 20:02:52
 ---
